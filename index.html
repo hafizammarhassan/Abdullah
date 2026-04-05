@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammar Hassan | Social Bio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #8E8E8E; 
+            --card-bg: #F2F2F2;
+            --btn-bg: #FFFFFF;
+            --text-main: #1A1A1A;
+            --text-sub: #666666;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            width: 90%;
+            max-width: 430px;
+            padding: 45px 20px;
+            border-radius: 45px;
+            box-shadow: 0 25px 55px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 5px;
+        }
+
+        .linktree-url {
+            color: var(--text-sub);
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: var(--btn-bg);
+            text-decoration: none;
+            margin-bottom: 14px;
+            padding: 16px 22px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .icon-box {
+            width: 42px;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-text {
+            flex-grow: 1;
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: 17px;
+            text-align: center;
+        }
+
+        /* Brand Colors */
+        .fa-instagram { color: #E4405F; }
+        .fa-tiktok, .fa-threads, .fa-x-twitter { color: #000000; }
+        .fa-youtube { color: #FF0000; }
+        .fa-snapchat { color: #FFFC00; text-shadow: 0px 0px 1px #000; } /* Snapchat Yellow */
+        .arrow { color: #D1D1D1; font-size: 12px; }
+
+        .qr-section {
+            margin-top: 35px;
+            border-top: 1px solid #E0E0E0;
+            padding-top: 25px;
+        }
+
+        .qr-code {
+            width: 120px;
+            height: 120px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="my-photo.jpg" alt="Profile" class="profile-img">
+        
+        <h1>Ammar Hassan</h1>
+        <a href="https://linktr.ee/ammar.hassan" class="linktree-url">linktr.ee/ammar.hassan</a>
+         
+        <a href="https://www.instagram.com/ammarhassanofficial" target="_blank" class="link-card">
+            <div class="icon-box"><i class="fa-brands fa-instagram"></i></div>
+            <span class="btn-text">Instagram</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <a href="https://www.snapchat.com/add/trendy_ammar" target="_blank" class="link-card">
+            <div class="icon-box"><i class="fa-brands fa-snapchat"></i></div>
+            <span class="btn-text">Snapchat</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@ammarhassan_official" target="_blank" class="link-card">
+            <div class="icon-box"><i class="fa-brands fa-tiktok"></i></div>
+            <span class="btn-text">TikTok</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <a href="https://www.threads.net/@ammarhassan" target="_blank" class="link-card">
+            <div class="icon-box"><i class="fa-brands fa-threads"></i></div>
+            <span class="btn-text">Threads</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <a href="https://x.com/ammarhassan" target="_blank" class="link-card">
+            <div class="icon-box"><i class="fa-brands fa-x-twitter"></i></div>
+            <span class="btn-text">Twitter / X</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@hmah.official" target="_blank" class="link-card">
+            <div class="icon-box"><i class="fa-brands fa-youtube"></i></div>
+            <span class="btn-text">YouTube</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+        <div class="qr-section">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://linktr.ee/ammarhassan" alt="QR" class="qr-code">
+        </div>
+    </div>
+
+</body>
+</HTML>
